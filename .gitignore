@@ -1,6 +1,4 @@
 .DS_Store 
-log/*.log 
-tmp/**/* 
+log/*.log
 db/*.sqlite3 
-coverage 
-doc/app/* 
+tmp/**/* 
