@@ -1,0 +1,27 @@
+<h1>Editing prcess</h1>
+
+<%= error_messages_for :prcess %>
+
+<% form_for(@prcess) do |f| %>
+  <p>
+    <b>Name</b><br />
+    <%= f.text_field :name %>
+  </p>
+
+  <p>
+    <b>Parent</b><br />
+    <%= f.text_field :parent_id %>
+  </p>
+
+  <p>
+    <b>Value</b><br />
+    <%= f.text_field :value %>
+  </p>
+
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @prcess %> |
+<%= link_to 'Back', prcesses_path %>

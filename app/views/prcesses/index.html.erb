@@ -1,0 +1,24 @@
+<h1>Listing prcesses</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Parent</th>
+    <th>Value</th>
+  </tr>
+
+<% for prcess in @prcesses %>
+  <tr>
+    <td><%=h prcess.name %></td>
+    <td><%=h prcess.parent_id %></td>
+    <td><%=h prcess.value %></td>
+    <td><%= link_to 'Show', prcess %></td>
+    <td><%= link_to 'Edit', edit_prcess_path(prcess) %></td>
+    <td><%= link_to 'Destroy', prcess, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New prcess', new_prcess_path %>
